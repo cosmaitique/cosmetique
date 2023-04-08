@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="wrapper">
+          <div class="logo">
+            <img src="./img/Ellipse 1.png" alt="Logo" />
+          </div>
+          <div class="navbar">
+            <div class="close-nav"><button>×</button></div>
+            <nav>
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <!-- <li><a href="./login.html" class="btn">Login</a></li> -->
+                <li><a href="./signup.html" class="btn">Sign Up</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="menu-bar">
+            <button><i></i></button>
+          </div>
+        </div>
+      </header>
+  
+  <script>
+  
+  const theBody = document.querySelector('body');
+            const openNav = document.querySelector('.menu-bar button');
+            const closeNav = document.querySelector('.close-nav button');
+            const Navbar = document.querySelector('.navbar');
+  
+            function bodyScroll(){
+                if(Navbar.classList.contains('show')){
+                    theBody.classList.add('hide-scroll');
+                }
+                else if(theBody.classList.contains('hide-scroll')){
+                    theBody.classList.remove('hide-scroll');
+                }
+            }
+  
+            function showHide(){
+                Navbar.classList.toggle('show');
+                bodyScroll();
+            }
+  
+            openNav.onclick = showHide;
+            closeNav.onclick = showHide;
+    
+  
+  </script>
+  
+    <!-- navbar -->
+<div class="container">
+    <div class="left">
+        <h1>Embrace your natural beauty today</h1>
+        <p>Welcome to Cosmetique, where beauty meets science. Our brand is committed to providing high-quality skincare and makeup products that are safe, effective, and cruelty-free. From anti-aging serums to bold lipsticks, we have everything you need to enhance your natural beauty. Join our community today and discover the power of science-based beauty.</p>
+    </div>
+    <div class="log">
+        <h4>Login</h4>
+        <h5>Email</h5>
+        <input type="email" placeholder="Enter Your Email">
+        <h5>Password</h5>
+        <input type="password" placeholder="Password">
+        <a href="./signup.html">Forgot Password?</a>
+
+        <button>LOGIN</button>
+
+        <a href="./signup.html" class="register">Don't have an account? <span>Register</span></a>
+    </div>
+</div>
+    
+    <!-- Footer -->
+<div class="footer">
+    <div class="footer-logo">
+        <img src="./img/Ellipse 11.png" alt="" >
+    </div>
+
+    <div class="line"><hr></div>
+
+    <div class="social">
+        <a href="https://www.instagram.com/__cosmetique.co/" target="blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+    </div>
+
+    <div class="line1"><hr></div>
+
+    <div class="footer-info">
+        <div class="info-1">
+            <h5 class="para">Download App</h5>
+            <img src="./img/Rectangle 25.png" alt="Loading">
+            <img src="./img/Rectangle 26.png" alt="Loading">
+        </div>
+        <div class="info-1">
+            <h5 class="para">Contact Us</h5>
+            <p class="para">cosmatique@gmail.com</p>
+            <p class="para">9576482450</p>
+            <p class="para">9576482450</p>
+        </div>
+        <div class="info-1">
+            <h5 class="para">Reach Us</h5>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus</p>
+        </div>
+    </div>
+
+    <div class="line2"><hr></div>
+
+    <div class="dis"><p class="para">Coprights Are Reserved to Cosmetique</p></div>
+</div>
+
+
+
+
+</body>
+</html>

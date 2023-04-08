@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Page</title>
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <header>
+        <div class="wrapper">
+          <div class="logo">
+            <img src="./img/Ellipse 1.png" alt="Logo" />
+          </div>
+          <div class="navbar">
+            <div class="close-nav"><button>×</button></div>
+            <nav>
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./login.html" class="btn">Log In</a></li>
+                <li><a href="./signup.html" class="btn">Sign Up</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="menu-bar">
+            <button><i></i></button>
+          </div>
+        </div>
+      </header>
+  
+  <script>
+  
+  const theBody = document.querySelector('body');
+            const openNav = document.querySelector('.menu-bar button');
+            const closeNav = document.querySelector('.close-nav button');
+            const Navbar = document.querySelector('.navbar');
+  
+            function bodyScroll(){
+                if(Navbar.classList.contains('show')){
+                    theBody.classList.add('hide-scroll');
+                }
+                else if(theBody.classList.contains('hide-scroll')){
+                    theBody.classList.remove('hide-scroll');
+                }
+            }
+  
+            function showHide(){
+                Navbar.classList.toggle('show');
+                bodyScroll();
+            }
+  
+            openNav.onclick = showHide;
+            closeNav.onclick = showHide;
+    
+  
+  </script>
+  
+    <!-- navbar -->
+
+    <!-- Service -->
+    
+        <p class="heading center">Services We Offer</p>
+        <h5 class="para">At Cosmetique, we are passionate about helping you look and feel your best. Our expert team of licensed cosmetologists and <br>estheticians is dedicated to providing you with the highest quality beauty services.</h5>
+        <h5> Here are some of the services we offer:</h6>
+        <!-- service-group -->
+        <div class="service-group bg">
+            <div class="container">
+            <div class="service">
+                <div class="service-content">
+                   <p class="para"><span class="heading"> Makeup Application</span> is an art form that can enhance a person's natural beauty and boost their confidence. Whether you're looking for a glamorous look for a special occasion or a more natural look for everyday wear, our makeup artists are skilled in creating customized looks that complement your unique features and personal style. They use high-quality products and advanced techniques to create a flawless finish that lasts all day. With their expertise, you can achieve a beautiful, polished look that highlights your best features and makes you feel confident and beautiful.</p>
+                   <a href="./login.html" class="button">Book Now</a>
+                </div>
+                <div class="service-img">
+                    <img src="./img/Ellipse 28.png" alt="Loading">
+                </div>
+            </div>
+    </div>
+</div>
+<!-- </div> -->
+        <!-- service-group -->
+        <div class="service-group ">
+            <div class="container">
+            <div class="service reverse">
+                <div class="service-img">
+                    <img src="./img/Ellipse 24.png" alt="Loading">
+                </div>
+                <div class="service-content">
+                   <p class="para"><span class="heading"> Skincare Consultation  </span>  Our skincare consultation service is designed to provide personalized recommendations to help you achieve a healthy and glowing complexion. Our team of skincare experts will assess your skin type, taking into account factors such as skin sensitivity, oiliness, and dryness, to provide tailored advice on products and treatments that are best suited for your skin's unique needs. We understand that everyone's skin is different, which is why our recommendations are personalized to your specific skin type and concerns. By taking advantage of our skincare consultation service, you can be confident in knowing that you are using the right products and treatments to help your skin look and feel its best.</p>
+                   <a href="./login.html" class="button">Book Now</a>
+                </div>
+                
+            </div>
+    </div>
+</div>
+  <!-- service-group -->
+  <div class="service-group bg">
+    <div class="container">
+    <div class="service ">
+        <div class="service-content">
+           <p class="para"><span class="heading"> Facials </span> Our facial service is a luxurious and rejuvenating experience tailored to your skin's specific needs. Our experienced estheticians use only the best skincare products to help you achieve your desired results. Whether you are looking to hydrate dry skin, reduce the appearance of fine lines and wrinkles, or improve your overall complexion, our facials are designed to address your individual concerns. Our relaxing facial treatment includes a deep cleanse, exfoliation, facial massage, and mask application to leave your skin feeling refreshed and revitalized. Treat yourself to a little self-care and enjoy the benefits of a healthy, glowing complexion with our facial service.</p>
+           <a href="./login.html" class="button">Book Now</a>
+        </div>
+        <div class="service-img">
+            <img src="./img/Ellipse 27.png" alt="Loading">
+        </div>
+    </div>
+</div>
+</div>
+<!-- service-group -->
+<div class="service-group ">
+    <div class="container">
+    <div class="service reverse">
+        <div class="service-img">
+            <img src="./img/Ellipse 26.png" alt="Loading">
+        </div>
+        <div class="service-content">
+           <p class="para"><span class="heading"> Hair Care </span> To summarize, when it comes to hair care, it's important to choose products that are specifically formulated for your hair type. Use a shampoo that removes excess oil and buildup for oily hair and a moisturizing shampoo for dry hair. Follow up with a conditioner to nourish and protect your hair, and use a hair mask once a week for an extra boost of hydration and strength. If you use heat styling tools, use a heat protectant spray to prevent damage, and to add shine and smoothness to your hair, try using a hair oil.</p>
+           <a href="./login.html" class="button">Book Now</a>
+        </div>
+        
+    </div>
+</div>
+</div>
+<div class="service-group bg">
+    <div class="container">
+    <div class="service">
+        <div class="service-content">
+           <p class="para"><span class="heading"> Manicures and Pedicures  </span>  Our manicure and pedicure service is designed to pamper and indulge you with luxurious treatments that leave your hands and feet looking and feeling their best. Our skilled nail technicians use high-quality products and techniques to help you achieve perfectly polished nails and soft, smooth skin. Whether you are looking for a classic French manicure or a bold, trendy nail design, we offer a variety of options to suit your individual style. Our pedicure service includes a relaxing foot soak, exfoliation, and massage to leave your feet feeling refreshed and rejuvenated. We prioritize hygiene and sanitation to ensure a safe and clean experience for our clients. Treat yourself to a little self-care and indulge in the luxurious experience of our manicure and pedicure service.</p>
+           <a href="./login.html" class="button">Book Now</a>
+        </div>
+        <div class="service-img">
+            <img src="./img/Ellipse 25.png" alt="Loading">
+        </div>
+    </div>
+</div>
+</div>
+    <!-- Service -->
+
+
+
+
+    <!-- Footer -->
+<div class="footer">
+    <div class="footer-logo">
+        <img src="./img/Ellipse 11.png" alt="" >
+    </div>
+
+    <div class="line"><hr></div>
+
+    <div class="social">
+        <a href="https://www.instagram.com/__cosmetique.co/" target="blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+    </div>
+
+    <div class="line1"><hr></div>
+
+    <div class="footer-info">
+        <div class="info-1">
+            <h5 class="para">Download App</h5>
+            <img src="./img/Rectangle 25.png" alt="Loading">
+            <img src="./img/Rectangle 26.png" alt="Loading">
+        </div>
+        <div class="info-1">
+            <h5 class="para">Contact Us</h5>
+            <p class="para">cosmatique@gmail.com</p>
+            <p class="para">9576482450</p>
+            <p class="para">9576482450</p>
+        </div>
+        <div class="info-1">
+            <h5 class="para">Reach Us</h5>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus</p>
+        </div>
+    </div>
+
+    <div class="line2"><hr></div>
+
+    <div class="dis"><p class="para">Coprights Are Reserved to Cosmetique</p></div>
+</div>
+
+</body>
+</html>

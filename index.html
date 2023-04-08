@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmetique</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <img src="./img/Ellipse 1.png" alt="Logo" />
+        </div>
+        <div class="navbar">
+          <div class="close-nav"><button>×</button></div>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="./shop.html">Shop</a></li>
+              <li><a href="./login.html" class="btn">Log In</a></li>
+              <li><a href="./signup.html" class="btn">Sign Up</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu-bar">
+          <button><i></i></button>
+        </div>
+      </div>
+    </header>
+
+<script>
+
+const theBody = document.querySelector('body');
+          const openNav = document.querySelector('.menu-bar button');
+          const closeNav = document.querySelector('.close-nav button');
+          const Navbar = document.querySelector('.navbar');
+
+          function bodyScroll(){
+              if(Navbar.classList.contains('show')){
+                  theBody.classList.add('hide-scroll');
+              }
+              else if(theBody.classList.contains('hide-scroll')){
+                  theBody.classList.remove('hide-scroll');
+              }
+          }
+
+          function showHide(){
+              Navbar.classList.toggle('show');
+              bodyScroll();
+          }
+
+          openNav.onclick = showHide;
+          closeNav.onclick = showHide;
+  
+
+</script>
+
+
+    <!-- hero-section -->
+    <div class="container">
+      <div class="hero-section">
+        <div class="hero-1">
+          <p class="heading">
+            Unleash Your Inner Beauty <br />
+            with our Cosmetics
+          </p>
+          <p class="para">
+            Welcome to our cosmetics company! We are committed to helping you
+            look and feel your best with our high-quality, ethically-sourced
+            beauty products. Discover your perfect match and unleash your inner
+            beauty with us.
+          </p>
+          <a href="#" class="button">Explore</a>
+        </div>
+        <div class="hero-img">
+          <img src="./img/Rectangle 27.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- herbal products -->
+    <div class="herbal-container">
+      <div class="container">
+        <p class="heading center">Revitalizing Skin with Herbal Elixirs</p>
+        <div class="herbal">
+          <div class="herbal-img"><img src="./img/as2.jpg" alt="" /></div>
+          <div class="herbal-1">
+            <p class="para">
+              Herbal products are a natural and effective way to take care of
+              your skin and hair. Packed with potent botanical extracts, they
+              offer a gentle yet powerful solution for all your beauty needs.
+              From soothing aloe vera to nourishing argan oil, these herbal
+              treasures work wonders on every skin and hair type, leaving you
+              with a radiant, healthy glow.
+            </p>
+            <a href="#" class="button">Discover More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- testimonials -->
+    <div class="container">
+      <p class="heading center">Testimonials</p>
+
+      <!-- testimonials section starting -->
+      <div class="card-group">
+        <div class="card">
+          <img src="./img/Ellipse 4.png" alt="Loading" />
+          <h5 class="para">John Wick</h5>
+          <p class="para">
+            "I absolutely love shopping at Cosmetique! The website is so easy to
+            navigate and I always find the latest and greatest beauty products
+            here. Plus, the prices are unbeatable!"
+          </p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="card">
+          <img src="./img/commentor-3.png" alt="Loading" />
+          <h5 class="para">Emma Watson</h5>
+          <p class="para">
+            Cosmetique has the best selection of makeup and skincare products. I
+            always come here when I need to revamp my beauty routine or try
+            something new. The quality of the products is top-notch and I've
+            never been disappointed.
+          </p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="card">
+          <img src="./img/Ellipse 17.png" alt="Loading" />
+          <h5 class="para">Elon Musk</h5>
+          <p class="para">
+            "Shopping at Cosmetique is such a treat! The website is so
+            aesthetically pleasing and it's always fun to browse the latest
+            trends in beauty. I appreciate the informative product descriptions
+            and reviews, which help me make informed decisions about what to
+            purchase."
+          </p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+      </div>
+    </div>
+    <!-- testimonials section over -->
+    <!-- ecommerce -->
+    <div class="shop">
+      <div class="container">
+        <p class="heading center">Shop Our Products on Our Website !</p>
+        <!-- shop group -->
+        <div class="shop-group">
+          <div class="shop-info">
+            <p class="para info-p">
+              Shop for your favorite beauty products from the comfort of your
+              own home on our exclusive website. Our extensive range of
+              high-quality cosmetics, skincare, and haircare products is just a
+              click away, with exclusive deals and discounts you won't find
+              anywhere else. With fast and reliable shipping, easy returns, and
+              expert customer service, shopping on our website is the ultimate
+              beauty experience. Don't wait, discover your new beauty obsession
+              today!
+            </p>
+            <a href="#" class="button">Shop</a>
+          </div>
+          <div class="shop-card">
+            <img src="./img/Rectangle 30.png" alt="Loading" />
+            <h5 class="para">Brush Combo</h5>
+            <h4 class="para">Rs. 1499</h4>
+            <p class="para">
+              Lorem ipsum dolor sit amet. Et odio molestiae et ipsam Quis et
+              voluptate ipsa At
+            </p>
+            <i class="fa-regular fa-heart"></i>
+            <a href="#" class="buy">Buy Now</a>
+          </div>
+          <div class="shop-card">
+            <img src="./img/Rectangle 31.png" alt="Loading" />
+            <h5 class="para">Lipstick Combo</h5>
+            <h4 class="para">Rs. 3999</h4>
+            <p class="para">
+              Lorem ipsum dolor sit amet. Et odio molestiae et ipsam Quis et
+              voluptate ipsa At
+            </p>
+            <i class="fa-regular fa-heart"></i>
+            <a href="#" class="buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-logo logo">
+        <img src="./img/Ellipse 11.png" alt="" />
+      </div>
+
+      <div class="line"><hr /></div>
+
+      <div class="social">
+        <a href="https://www.instagram.com/__cosmetique.co/" target="blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+
+      <div class="line1"><hr /></div>
+
+      <div class="footer-info">
+        <div class="info-1">
+          <h5 class="para">Download App</h5>
+          <img src="./img/Rectangle 25.png" alt="Loading" />
+          <img src="./img/Rectangle 26.png" alt="Loading" />
+        </div>
+        <div class="info-1">
+          <h5 class="para">Contact Us</h5>
+          <p class="para">cosmatique@gmail.com</p>
+          <p class="para">9576482450</p>
+          <p class="para">9576482450</p>
+        </div>
+        <div class="info-1">
+          <h5 class="para">Reach Us</h5>
+          <p class="para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta
+            minus molestiae vel beatae natus eveniet ratione temporibus
+          </p>
+        </div>
+      </div>
+
+      <div class="line2"><hr /></div>
+
+      <div class="dis">
+        <p class="para">Coprights Are Reserved to Cosmetique</p>
+      </div>
+    </div>
+  </body>
+</html>
